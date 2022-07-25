@@ -1,0 +1,138 @@
+.pps__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  z-index: 1;
+  font-family: var(--font-family-);
+  font-weight: 600;
+  font-size: 20px;
+  background: rgb(86, 50, 126);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(86, 50, 126, 1) 0%,
+    rgba(35, 33, 36, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(86, 50, 126, 1) 0%,
+    rgba(35, 33, 36, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(86, 50, 126, 1) 0%,
+    rgba(35, 33, 36, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56327e",endColorstr="#232124",GradientType=1);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  background: none;
+}
+.pps__background {
+  background: rgb(86, 50, 126);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(86, 50, 126, 1) 0%,
+    rgba(35, 33, 36, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(86, 50, 126, 1) 0%,
+    rgba(35, 33, 36, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(86, 50, 126, 1) 0%,
+    rgba(35, 33, 36, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56327e",endColorstr="#232124",GradientType=1);
+}
+.pps__navbar-logo {
+  display: flex;
+  margin-right: 1rem;
+  width: 20rem;
+}
+.pps__navbar-logo img {
+  max-width: 100%;
+}
+.desktop-menu {
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  margin: 0rem 1rem;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+.desktop-menu p {
+  padding: 0rem 1rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.line-menu {
+  display: none;
+}
+.pps__navbar-menu-container-links a:active,
+a:hover {
+  color: var(--color-subtext);
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .line-menu {
+    display: flex;
+  }
+  .pps__navbar-menu {
+    display: flex;
+  }
+  .pps__navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  .pps__navbar-logo img {
+    margin: 1rem;
+    width: 170px;
+  }
+  .menu-mobile {
+    display: flex;
+  }
+  .pps__navbar {
+    padding: 0.5rem;
+  }
+  .pps__navbar a {
+    display: flex;
+    padding: 1rem;
+  }
+  .pps__navbar-menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 150px;
+    height: 190px;
+    font-size: 20px;
+    top: 85px;
+    right: 5px;
+    background: var(--gradient-text);
+    z-index: 1;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  .pps__navbar-menu-container p {
+    color: black;
+    cursor: pointer;
+    border: none;
+    display: flex;
+  }
+  .pps__navbar-menu-container p:hover {
+    color: var(--purple);
+  }
+}
