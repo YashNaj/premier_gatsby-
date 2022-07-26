@@ -1,3 +1,7 @@
 node_modules/
 .cache/
 public
+TYPE
+
+.env
+TYPEKIT_ID= kaa7gct

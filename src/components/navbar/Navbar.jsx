@@ -2,6 +2,7 @@ import "./navbar.scss";
 import logo from "../../images/text249.png";
 import React, { useEffect, useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import "../../styles/Styles.scss";
 const Menu = () => (
   <>
     <p>

@@ -1,26 +1,342 @@
-body{
-    font-family: arial;
-}
-.custom-section{
-    text-align: center;
-    font-size: 4em;
-    color: #fff;
+
+.gradient-text {
+  -webkit-text-fill-color: transparent;
+  background: #e2cde8;
+  background: radial-gradient(
+    circle,
+    #e2cde8 0,
+    hsla(0, 0%, 99%, 0.835) 79%,
+    #fff 100%
+  );
+  -webkit-background-clip: text;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e2cde8",endColorstr="#ffffff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
-.actions{
-    list-style-type: none;
+body {
+  font-family: Futura;
 }
-.actions button{
-    padding: .93em 1.87em;
-    background: #35495e;
-    border-radius: 5px;
-    border: 0;
+.custom-section {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+}
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height:100%;
+  position: absolute;
+  justify-content: center;
+}
+.welcome-button {
+  background-color: rgba(206,184,206,.845);
+    border: 3px solid #fff;
+    border-radius: 14px;
     color: #fff;
-    margin: 7px;
-    font-size: 15px;
     cursor: pointer;
+    font-size: 17px;
+    height: auto;
+    line-height: 1;
+    outline: none;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    width: auto;
+    font-size:22px;
+    font-weight: 700;
+    margin: 2rem 0rem;
 }
-.actions button:hover{
-    background: #fff;
-    color: #35495e;
-}   
+.welcome-blurb{
+  font-size:19px;
+  display: flex;
+  justify-content: center;  margin-bottom: 4rem;
+  color:white;
+  margin: 2rem 0rem;
+  font-weight:bold;
+
+}
+.background {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  display: block;
+
+  background-image: url(.././images/inlandempire2.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center center;
+}
+.welcome-title {
+  display: flex;
+  font-size: 99px;
+  font-weight: 900;
+  margin: 2rem 0rem;
+}
+.page {
+  display: flex;
+  background: linear-gradient(
+    61deg,
+    rgba(0, 0, 0, 0.36),
+    rgba(45, 40, 40, 0.856)
+  );
+  width: 100vw;
+  height: 100vh;
+}
+.about-container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height:100vh;
+}
+.about-heading{
+  font-size:100px;
+}
+:root {
+  --font-family-: "Futura";
+
+  --gradient-text: linear-gradient(
+    315deg,
+    hsla(268, 37%, 68%, 1) 0%,
+    hsla(265, 100%, 81%, 1) 0%,
+    hsla(318, 30%, 92%, 1) 78%,
+    hsla(0, 0%, 89%, 1) 100%,
+    hsla(0, 2%, 75%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    315deg,
+    hsla(268, 37%, 68%, 1) 0%,
+    hsla(265, 100%, 81%, 1) 0%,
+    hsla(318, 30%, 92%, 1) 78%,
+    hsla(0, 0%, 89%, 1) 100%,
+    hsla(0, 2%, 75%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    315deg,
+    hsla(268, 37%, 68%, 1) 0%,
+    hsla(265, 100%, 81%, 1) 0%,
+    hsla(318, 30%, 92%, 1) 78%,
+    hsla(0, 0%, 89%, 1) 100%,
+    hsla(0, 2%, 75%, 1) 100%
+  );
+
+  /* CSS HEX */
+  --black: #000000ff;
+  --white: #f5f5f5;
+  --lilac: #9d75cbff;
+  --purple: #a657aeff;
+  --augergine: #8c1a6aff;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8743872549019608) 0%,
+    rgba(201, 175, 232, 0.8463760504201681) 0%,
+    rgba(255, 255, 255, 1) 29%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8743872549019608) 0%,
+    rgba(201, 175, 232, 0.8463760504201681) 0%,
+    rgba(255, 255, 255, 1) 29%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8743872549019608) 0%,
+    rgba(201, 175, 232, 0.8463760504201681) 0%,
+    rgba(255, 255, 255, 1) 29%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+
+  z-index: 1;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.gradient__bg {
+  background: rgb(247, 247, 255);
+  background: var(--gradient-bar);
+}
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient__text2 {
+  background: linear-gradient(
+    61deg,
+    rgba(18, 4, 33, 1) 0%,
+    rgba(91, 75, 108, 1) 13%,
+    rgba(40, 19, 61, 1) 38%,
+    rgba(74, 64, 83, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#120421",endColorstr="#4a4053",GradientType=1);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section__padding {
+  padding: 4rem 6rem;
+}
+.section__margin {
+  margin: 4rem 6rem;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-5-5 16:33:58
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}
+a:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+.engrave {
+  text-shadow:  linear-gradient(
+    61deg,
+    rgba(0, 0, 0, 0.36),
+    rgba(45, 40, 40, 0.856)
+  );
+}
+.fp-watermark {
+  display: none;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-6-9 12:0:56
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.4s cubic-bezier(0.65, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-in-right 0.4s cubic-bezier(0.65, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+.slide-out-right {
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+}
