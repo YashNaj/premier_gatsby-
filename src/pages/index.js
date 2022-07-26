@@ -36,8 +36,6 @@ class App extends React.Component {
 
   onLeave(origin, destination, direction) {
     console.log('onLeave', { origin, destination, direction });
-    // arguments are mapped in order of fullpage.js callback arguments do something
-    // with the event
   }
 
   handleChangeColors() {
@@ -76,8 +74,7 @@ class App extends React.Component {
   }
 
   moveSectionDown() {
-    window.fullpage_api.moveSectionDown();
-  }
+    window.fullpage_api.moveSectionDown();}
 
   render() {
     const { fullpages } = this.state;
