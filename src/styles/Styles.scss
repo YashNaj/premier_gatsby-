@@ -86,14 +86,22 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.test{
+  display: flex;
+}
 .about-container{
   display: flex;
   flex-direction: column;
   width: 100vw;
   height:100vh;
+  padding-top: 5rem;
+  
 }
 .about-heading{
-  font-size:100px;
+  font-size:90px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
 }
 :root {
   --font-family-: "Futura";

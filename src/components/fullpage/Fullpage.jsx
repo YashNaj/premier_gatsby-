@@ -1,10 +1,11 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Navbar from '../../components/navbar/Navbar';
 import '../../styles/Styles.scss'
+import CardContainer from "../../containers/CardContainers/CardContainer";
 const Fullpage = (fullpageProps) => (
   <ReactFullpage
-    scrollingSpeed={1000} /* Options here */
+    scrollingSpeed={1000}
+    scrollOverflow={true} /* Options here */
     render={({ state, fullpageApi }) => {
       console.log("render prop change", state); // eslint-disable-line no-console
 
@@ -39,9 +40,10 @@ const Fullpage = (fullpageProps) => (
           
           <div className="section page page2" id = "about">
             <div className="about-container">
-              <div classname=" about-heading gradient__text">
+              <div className=" about-heading gradient__text">
                 Our Services
               </div>
+              <CardContainer/>
             </div>
           </div>
 
