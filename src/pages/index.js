@@ -1,5 +1,5 @@
 import React from "react";
-import Fullpage from "../components/fullpage/Fullpage.jsx";
+import Fullpage from "../containers/fullpage/Fullpage.jsx";
 import Navbar  from "../components/navbar/Navbar";
 
 const App = () => {

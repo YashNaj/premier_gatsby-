@@ -1,7 +1,7 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import '../../styles/Styles.scss'
-import CardContainer from "../../containers/CardContainers/CardContainer";
+import CardContainer from "../../containers/CardContainer";
 const Fullpage = (fullpageProps) => (
   <ReactFullpage
     scrollingSpeed={1000}
