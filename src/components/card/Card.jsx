@@ -1,24 +1,17 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-import './card.scss'
-const Card = ({title,text,icon}) => {
+import React from "react";
+import "./card.scss";
+const Card = ({ title, text, className, iconClass }) => {
   return (
-    <div className="card">
-      <div className="single-card-container">
-       <div className="card-background" />
-       <div className="card icon">
-          <FontAwesomeIcon icon={icon} />
-        </div>
-       <div className="card-title">
+    <div className={className}>
+      <div className='card-background'>
+      <i className={iconClass} />
+      </div>
+      <div className="card-title gradient__text card-text-stile">
         {title}
-       </div>
-       <div className="card-text" >
-        {text}
-       </div> 
-      </div> 
-    </div>                       
+      </div>
+      <div className="card-text card-text-stile">{text}</div>
+    </div>
+  );
+};
 
-    )
-}
-
-export default Card
+export default Card;

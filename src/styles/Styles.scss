@@ -1,4 +1,6 @@
-
+.fp-watermark{
+  display: none;
+}
 .gradient-text {
   -webkit-text-fill-color: transparent;
   background: #e2cde8;
@@ -14,7 +16,12 @@
 }
 
 body {
-  font-family: Futura;
+  font-family: futura-pt, sans-serif;
+}
+#about{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
 }
 .custom-section {
   text-align: center;
@@ -27,6 +34,7 @@ body {
   text-align: center;
   align-items: center;
   height:100%;
+  width: 100%;
   position: absolute;
   justify-content: center;
 }
@@ -55,7 +63,8 @@ body {
   justify-content: center;  margin-bottom: 4rem;
   color:white;
   margin: 2rem 0rem;
-  font-weight:bold;
+  font-weight: book;
+  font-size:20px;
 
 }
 .background {
@@ -75,6 +84,7 @@ body {
   font-size: 99px;
   font-weight: 900;
   margin: 2rem 0rem;
+  width: 80%;
 }
 .page {
   display: flex;
@@ -92,9 +102,8 @@ body {
 .about-container{
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height:100vh;
-  padding-top: 5rem;
+  width: 100%;
+  height:100%;
   
 }
 .about-heading{
@@ -102,17 +111,18 @@ body {
   font-weight: 900;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin:1rem
 }
 :root {
-  --font-family-: "Futura";
-
   --gradient-text: linear-gradient(
     315deg,
-    hsla(268, 37%, 68%, 1) 0%,
-    hsla(265, 100%, 81%, 1) 0%,
-    hsla(318, 30%, 92%, 1) 78%,
-    hsla(0, 0%, 89%, 1) 100%,
-    hsla(0, 2%, 75%, 1) 100%
+    rgb(158, 74, 255) 4%,
+    rgb(114, 37, 222) 12%,
+    rgba(255, 52, 194, 0.765) 78%,
+    rgb(251, 41, 41) 100%,
+    rgb(255, 49, 49) 100%
+  
   );
 
   background: -moz-linear-gradient(

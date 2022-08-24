@@ -1,7 +1,6 @@
 import React from "react";
 import Fullpage from "../containers/fullpage/Fullpage.jsx";
-import Navbar  from "../components/navbar/Navbar";
-
+import Navbar from "../components/navbar/Navbar";
 const App = () => {
   return (
     <div className="App">

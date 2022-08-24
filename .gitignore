@@ -3,5 +3,5 @@ node_modules/
 public
 TYPE
 
-.env
-TYPEKIT_ID= kaa7gct`
+.env*
+TYPEKIT_ID= 'kaa7gct`

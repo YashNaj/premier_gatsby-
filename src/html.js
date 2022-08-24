@@ -4,7 +4,9 @@ import PropTypes from "prop-types"
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
-      <head>  
+      <head>
+      <script src="https://kit.fontawesome.com/7f9cd7ed68.js" crossOrigin="anonymous"/>
+      <link rel="stylesheet" href="https://use.typekit.net/kaa7gct.css"/>  
       <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
