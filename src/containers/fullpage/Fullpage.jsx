@@ -2,7 +2,7 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "../../styles/Styles.scss";
 import CardContainer from "../CardContainer/CardContainer";
-import { Contact } from "../Contact/Contact";
+import Contact from "../Contact/Contact";
 const Fullpage = (fullpageProps) => (
   <ReactFullpage
     scrollingSpeed={1000}
@@ -39,12 +39,12 @@ const Fullpage = (fullpageProps) => (
           <div className="section page page2" id="about">
             <div className="about-container">
               <div className=" about-heading gradient__text">Our Services</div>
-              <CardContainer />
+              <CardContainer/>
             </div>
           </div>
 
           <div className="section page page3" id="contact">
-            <Contact />
+            <Contact/>
           </div>
         </div>
       );
