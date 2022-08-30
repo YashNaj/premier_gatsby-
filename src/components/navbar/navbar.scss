@@ -65,7 +65,20 @@ a:hover {
   cursor: pointer;
   border: none;
 }
-@media screen and (max-width: 768px) {
+.navButtons{
+  text-decoration: none;
+  color: white;
+  background: none;
+  border:none;
+  font-size: 22px;
+  font-family: futura-pt, bold;
+  font-weight: 900;
+  cursor: pointer;
+}
+.navButtons:hover{
+  color:rgb(86, 50, 126);
+}
+@media screen and (max-width: 767px) {
   .desktop-menu {
     display: none;
   }

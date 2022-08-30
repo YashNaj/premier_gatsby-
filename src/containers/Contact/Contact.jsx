@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactGrid from '../../components/contactGrid/ContactGrid';
+import Footer from '../../components/footer/Footer';
 import './contact.scss'
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
          Contact Us  
       </div>
       <div className='contact'>
-        <ContactGrid/>
+        <ContactGrid />
       </div>
     </div>
   )

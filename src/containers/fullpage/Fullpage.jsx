@@ -3,10 +3,11 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "../../styles/Styles.scss";
 import CardContainer from "../CardContainer/CardContainer";
 import Contact from "../Contact/Contact";
+import '../../styles/responsiveStyles.scss'
 const Fullpage = (fullpageProps) => (
   <ReactFullpage
     scrollingSpeed={1000}
-    licenseKey={fullpageProps.licenseKey}
+    licenseKey=''
     scrollOverflow={true} /* Options here */
     render={({ state, fullpageApi }) => {
       console.log("render prop change", state); // eslint-disable-line no-console

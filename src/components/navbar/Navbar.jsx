@@ -6,15 +6,17 @@ import "../../styles/Styles.scss";
 const Menu = () => (
   <>
     <p>
-      <a href="#welcome">Welcome</a>
+      <button href="#welcome" className = 'navButtons'   onClick={() => window.fullpage_api.moveTo(1)}>
+        Welcome
+      </button>
     </p>
     <p>
-      <a href="#about" className="anchorAbout">
+      <button className="navButtons" onClick={() => window.fullpage_api.moveTo(2)}>
         About
-      </a>
+      </button>
     </p>
     <p>
-      <a href="#moreinfo">More Info</a>
+    <button className = 'navButtons' onClick = {() => window.fullpage_api.moveTo(3)}>More Info</button>
     </p>
   </>
 );
@@ -28,8 +30,7 @@ const Navbar = () => {
     });
   }, []);
   return (
-    <div className={scroll ? "pps__navbar pps__background":"pps__navbar"}
-    >
+    <div className={scroll ? "pps__navbar pps__background" : "pps__navbar"}>
       <div className="pps__navbar-logo">
         <img src={logo} alt="logo" />
       </div>
@@ -47,7 +48,7 @@ const Navbar = () => {
           <RiMenu3Line
             color="white"
             size={40}
-              onClick={() => setToggleMenu(true)}
+            onClick={() => setToggleMenu(true)}
           />
         )}
         {toggleMenu && (
